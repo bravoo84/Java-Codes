@@ -20,7 +20,7 @@ class Students
     }
     
     Students(){}
-    
+    //Student setter method
     void setstu(String name,int roll,double cgpa)
     {
         this.name=name;
@@ -29,6 +29,7 @@ class Students
         
         this.cgpa=cgpa;
     }
+    //Student getter method
     void getstu()
     {
         System.out.println(name+"\t"+roll+"\t"+cgpa);
