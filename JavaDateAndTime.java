@@ -6,6 +6,13 @@ import java.util.Scanner;
 public class JavaDateAndTime {
     static List<String> days = Arrays.asList("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");
     
+    /**
+     * Gives the Day of the week(SUNDAY,MONDAY...) based on the passed params
+     * @param day
+     * @param month
+     * @param year
+     * @return
+     */
     public static String getDay(String day, String month, String year) {
           
         int y = Integer.parseInt(year);
