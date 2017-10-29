@@ -1,3 +1,6 @@
+/*
+this program is used to find minimum distance between two vertices while traversing all available vertices.
+*/
 package javacodes;
 
 import java.util.*;
@@ -49,7 +52,7 @@ public class Dijkstra {
         }
  
        
-        dist[src] = 0;
+        dist[src] = 0; /* Starting distance is zero */
  
        
         for (int count = 0; count < V-1; count++)
@@ -83,7 +86,7 @@ public class Dijkstra {
     {
         Scanner in=new Scanner(System.in);
         
-        System.out.println("Number of vertices:");
+        System.out.println("Number of vertices:");            /* print the total numbers of vertices */
         
         V=in.nextInt();
         
@@ -97,7 +100,7 @@ public class Dijkstra {
                
                graph[i][j]=in.nextInt();
        }
-       Dijkstra ob=new Dijkstra();
+       Dijkstra ob=new Dijkstra();                    /* create new object of Dijkstra */
        
         ob.dijkstra(graph, 0);
     }
